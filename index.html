@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DHimbil Audit & Asurance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><img src="img/dlogo.png"></label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="active"href="about.html">About</a></li>
+      <li><a class="active"href="services.html">Services</a></li>
+      <li><a class="active"href="contact.html">Contact</a></li>
+      <li><a class="active"href="log.html">Log in</a></li>
+    </ul>
+  </nav>
+  <body>
+    <section class="boxes">
+        <div class="boxes">
+            <img src="img/z2.png">
+        </div>
+    </section>
+    <section class="boxes">
+        <p><h2>Services</h2></p>
+    </section>
+    <section class="boxes">
+    
+        <div class="box">
+            <i class="fas fa-globe fa-4x"></i>
+            <h3>Financial advises</h3>
+            <p>Dhimbil Audit Firm provides a wide range of financial services, <br>
+            including audit and assurance, tax planning, and consulting. <br>
+            We specialize in bookkeeping, financial reporting, risk assessment,<br>
+            and compliance management. Our expert team delivers <br>
+            tailored solutions to enhance financial performance, ensure regulatory<br> 
+            compliance, and support sustainable growth for businesses of all sizes.</p></div>
+        <div class="box">
+            <i class="fas fa-desktop fa-4x"></i>
+        <h3>Tax Report</h3>
+        <p>At Dhimbil Audit Firm, our tax report services include preparing <br>
+            accurate tax filings, identifying eligible deductions, and ensuring <br>
+            compliance with local and international tax regulations. We assist<br>
+             businesses and individuals in optimizing tax liabilities, managing <br>
+             documentation, and providing strategic advice to minimize risks and <br>
+             maximize savings, ensuring timely and precise tax submissions.</p></div>
+        <div class="box">
+            <i class="fas fa-chart-line fa-4x"></i>
+        <h3>Fronseic Audit</h3>
+         <p>Dhimbil Audit Firm specializes in forensic auditing, providing comprehensive<br>
+             services to investigate financial discrepancies, fraud, and misconduct within organizations.<br>
+              Our forensic audit team uses advanced techniques to identify hidden assets, uncover financial<br>
+              irregularities, and offer clear insights into financial operations. With a focus on transparency,<br>
+               enhancing trust with stakeholders.Dhimbil's forensic audit services ensure businesses <br>
+            can protect their assets and maintain integrity, </p></div>
+    <div class="box">
+        <i class="fas fa-chart-bar fa-4x"></i>
+        <h3>Enterprise Resource Planning</h3>
+        <p>Dhimbil Audit Firm offers expert ERP (Enterprise Resource Planning) solutions<br> 
+            designed to streamline your business operations. Our ERP services integrate<br> 
+            key processes such as finance, inventory, and human resources into <br>
+            a unified system. We help businesses improve efficiency, <br>
+            reduce costs, and make informed decisions for sustainable growth.Dhimbil's ERP ensure businesses <br>
+            can protect their assets and maintain integrity, </p></div>
+    </section>
+   <section>  <img src="img/z3.png"></section>
+   <footer>
+    <p>&copy; 2024 Dhimbil Audit Firm. All Rights Reserved.</p>
+</footer>
+
+</body>
+
+</html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background: #333;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #36454F;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+section.boxes {
+    width: 100%;
+}
+section.boxes {
+    width: 100%;
+}
+section.boxes .boxes {
+    width: 100%;          
+    overflow: hidden;     
+}
+section.boxes .boxes img {
+    width: 100%;          
+    height: 600px;         
+    display: block;      
+}
+section.boxes {
+    display: flex;                
+    flex-wrap: wrap;              
+    justify-content: space-between; 
+    align-items: flex-start;      
+    padding: 20px;                
+    gap: 20px;                    
+}
+
+
+section.boxes .box {
+    flex: 1 1 22%;               
+    max-width: 430px;             
+    background: #f8f9fa;        
+    border: 1px solid #e0e0e0;   
+    border-radius: 8px;          
+    padding: 20px;               
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;         
+    transition: transform 0.3s; 
+}
+section.boxes .box:hover {
+    transform: translateY(-10px); 
+}
+
+section.boxes .box i {
+    color: #007bff;              
+    margin-bottom: 15px;         
+}
+section.boxes .box h3 {
+    font-size: 1.2em;            
+    margin-bottom: 10px;        
+    color: #333;                
+}
+section.boxes .box p {
+    font-size: 0.95em;           
+    line-height: 1.6;            
+    color: #555;             
+}
+@media screen and (max-width: 768px) {
+    section.boxes {
+        flex-direction: column; 
+        align-items: center;    
+    }
+
+    section.boxes .box {
+        width: 100%;           
+        max-width: 90%;        
+    }
+}
+footer {
+    background-color: #333;     
+    color: #fff;                
+    text-align: center;         
+    padding: 20px 0;            
+    font-size: 1em;             
+    margin-top: 20px;           
+}
+@media screen and (max-width: 768px) {
+    section.boxes {
+        flex-direction: column; 
+        align-items: center;    
+    }
+
+    section.boxes .box {
+        width: 100%;          
+        max-width: 90%;        
+    }
+}

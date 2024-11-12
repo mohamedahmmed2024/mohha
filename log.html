@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Wrapper for Flexbox Layout -->
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <!-- Checkbox for toggling menu -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Site logo -->
+            <label class="logo"><img src="img/dlogo.png"></label>
+            <ul>
+                <li><a class="active"href="index.html">Home</a></li>
+                <li><a class="active"href="about.html">About</a></li>
+                <li><a class="active"href="services.html">Services</a></li>
+                <li><a class="active"href="contact.html">Contact</a></li>
+                <li><a class="active"href="login.html">log in</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login Section -->
+        <section class="login-section">
+            <div class="loginbox">
+                <img src="img/i2.png" class="user">
+                <h2>Log in Here</h2>
+                <form>
+                    <p>Email</p>
+                    <input type="text" placeholder="Enter Email">
+                    <p>Password</p>
+                    <input type="password" placeholder="********">
+                    <input type="submit" value="Sign In">
+                    <a href="#">Forget Password?</a>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Dhimbil Audit Firm. All Rights Reserved.</p>
+        </footer>
+    </div> 
+</body>
+</html>
+<style>
+    /* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navigation */
+.main-nav {
+    background: #333;
+    height: 80px;
+    width: 100%;
+}
+
+.main-nav .logo {
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.main-nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    background: #555;
+}
+
+.checkbtn {
+    display: none;
+}
+
+/* Login Box */
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/i8.png) no-repeat center center/cover;
+}
+
+.loginbox {
+    width: 350px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.loginbox .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.loginbox p {
+    text-align: left;
+    font-weight: bold;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.loginbox input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #ff267e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loginbox input[type="submit"]:hover {
+    background: #efed40;
+    color: #333;
+}
+
+.loginbox a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Ensures footer is at the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .main-nav ul {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .loginbox {
+        width: 90%;
+    }
+}
+</style>

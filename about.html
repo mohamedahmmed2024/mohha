@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dhimbil Audit Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><img src="img/dlogo.png" alt="Dhimbil Logo"></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a class="active" href="services.html">Services</a></li>
+                <li><a class="active"  href="contact.html">Contact</a></li>
+                <li><a class="active"  href="log.html">log in</a></li>
+            </ul>
+        </nav>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <div class="about-container">
+                <h2>About Dhimbil Audit Firm</h2>
+                <p>At Dhimbil Audit Firm, we are committed to providing our clients with the highest quality audit, financial advisory, and tax services. Our mission is to help businesses achieve financial success through strategic planning and sound advice.</p>
+            </div>
+            
+            <!-- Mission, Vision, and Values Section -->
+            <div class="about-details">
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to offer reliable, transparent, and strategic financial services that help businesses grow sustainably and efficiently.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>To become the leading provider of audit and financial services globally, trusted by businesses of all sizes for our integrity and expertise.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Values</h3>
+                    <p>Integrity, professionalism, excellence, and customer-centricity are the core values that drive everything we do at Dhimbil Audit Firm.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Social Media Section -->
+            <div class="social-media">
+                <h3 class="follow us">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Dhimbil Audit Firm. All Rights Reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
+
+<style>
+    /* General Styling */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: url('img/i8.png') no-repeat center center/cover;
+        min-height: 100vh; /* Ensures the page takes up at least 100% of the viewport height */
+        display: flex;
+        flex-direction: column; /* Ensures that the footer stays at the bottom */
+    }
+
+    .wrapper {
+        flex: 1; /* Ensures the wrapper takes up the remaining space */
+    }
+
+    /* Navigation */
+    .main-nav {
+        background: #333;
+        height: 80px;
+        width: 100%;
+    }
+
+    .main-nav .logo {
+        font-size: 25px;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+    .main-nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .main-nav ul li {
+        display: inline-block;
+        line-height: 80px;
+    }
+
+    .main-nav ul li a {
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .main-nav ul li a:hover,
+    .main-nav ul li a.active {
+        background: #555;
+    }
+
+    /* About Us Section */
+    .about-us {
+        padding: 60px 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-container h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .about-container p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .about-details {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .about-box {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        transition: 0.3s;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .about-box h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about-box p {
+        font-size: 16px;
+    }
+
+    .about-box:hover {
+        transform: translateY(-10px);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Social Media Section */
+    .social-media {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-icons a {
+        color: #ff267e;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #efed40;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .main-nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-nav ul li {
+            margin: 10px 0;
+        }
+
+        .about-container h2 {
+            font-size: 28px;
+        }
+
+        .about-container p {
+            font-size: 16px;
+        }
+
+        .about-details {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+</style>
